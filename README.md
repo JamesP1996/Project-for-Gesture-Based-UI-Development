@@ -9,7 +9,7 @@ The Unity Game is a VR Shooting Range where you can practice destroying targets 
 It uses Unity's XR Input System that was released in the past year and is my first attempt at making a VR based game.
 It was play test on a Oculus Quest 2 and was a interesting experience to create.
 
-For a more detailed explanation of the Game please read the Documentation within the G00327095 Gesture Project PDF file or read the code comments.
+For a more detailed explanation of the Game please read the Documentation within the <b>G00327095 Gesture Project PDF</b> file or read the code comments.
 
 # Copyrights
 All Sound and Ambience was gotten from Royalty Free Sound Websites and the models belong to their respective creators/owners.
