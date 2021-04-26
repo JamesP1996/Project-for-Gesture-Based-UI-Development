@@ -5,13 +5,14 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-
-   
     public Vector3 SpawnHere;
 
     public GameObject ImpactParticles;
     public int force = 30;
     public float lifetime = 12;
+
+    // When Launch is Called, Get the RigidBody of the Projectile Game Object, Add force to it in Impulse Mode
+    // After lifetime -> seconds have passed destroy the bullet
     public void Launch()
     {
         Rigidbody rigidbody = GetComponent<Rigidbody>();
@@ -19,6 +20,8 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject,lifetime);
     }
 
+    // If the bullet collides with a target, start a impact particle game object (holds a particle system)
+    // Destroy the Target and then Destroy the particle system after 50% of a second
      private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "Target")

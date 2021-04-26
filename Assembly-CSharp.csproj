@@ -36,20 +36,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\LocomotionController.cs" />
-     <Compile Include="Assets\Scripts\Bottle.cs" />
      <Compile Include="Assets\Scripts\Gun\Barrel.cs" />
      <Compile Include="Assets\Scripts\Gun\GripHold.cs" />
      <Compile Include="Assets\Scripts\Gun\GuardHold.cs" />
-     <Compile Include="Assets\Scripts\Gun\Hand.cs" />
      <Compile Include="Assets\Scripts\Gun\HandHold.cs" />
      <Compile Include="Assets\Scripts\Gun\Hand_Presence.cs" />
      <Compile Include="Assets\Scripts\Gun\Projectile.cs" />
      <Compile Include="Assets\Scripts\Gun\Weapon.cs" />
+     <Compile Include="Assets\Scripts\LocomotionController.cs" />
      <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
      <Compile Include="Assets\Scripts\Target\GizmoDraw.cs" />
      <Compile Include="Assets\Scripts\Target\SpawnPoint.cs" />
-     <Compile Include="Assets\Scripts\Target\Target.cs" />
      <Compile Include="Assets\Scripts\Target\TargetBreak.cs" />
      <Compile Include="Assets\Scripts\UIHandler.cs" />
      <Compile Include="Assets\Settings\TutorialInfo\Scripts\Readme.cs" />

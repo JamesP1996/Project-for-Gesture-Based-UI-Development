@@ -21,22 +21,23 @@ public class Barrel : MonoBehaviour
 
     AudioSource audioSource;
 
+    // Set the Weapon Constructor
      public void Setup(Weapon weapon)
     {
         this.weapon = weapon;
     }
-
+    // On Awake Set the Audio Source and The Wait Time
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
         wait = new WaitForSeconds(fireWait);
     }
-
+    // Start the Firing Sequence Coroutine
     public void StartFiring()
     {
         firingRoutine = StartCoroutine("FiringSequence");
     }
-
+    // Create a Projectile, Add Recoil to the Gun and play Weapon Sounds then Wait
     private IEnumerator FiringSequence()
     {
         while(gameObject.activeSelf)
@@ -49,7 +50,7 @@ public class Barrel : MonoBehaviour
         }
         
     }
-
+    // Spawn a Project and Call it's launch function which gives it Vector3 Forward Force
     private void CreateProjectile()
     {
         GameObject projectileObject = Instantiate(projectilePrefab, transform.position,transform.rotation);
@@ -57,6 +58,7 @@ public class Barrel : MonoBehaviour
         projectile.Launch();
     }
 
+    // Stop Firing (Used in Trigger Release)
     public void StopFiring()
     {
         StopCoroutine(firingRoutine);
