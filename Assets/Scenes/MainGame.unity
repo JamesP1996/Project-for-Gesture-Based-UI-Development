@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1985,7 +1985,7 @@ MonoBehaviour:
   m_RigBaseGameObject: {fileID: 148111972}
   m_CameraFloorOffsetObject: {fileID: 337920279}
   m_CameraGameObject: {fileID: 1706176516}
-  m_TrackingOriginMode: 1
+  m_TrackingOriginMode: 2
   m_TrackingSpace: 3
   m_CameraYOffset: 1.36144
 --- !u!4 &148111974
@@ -7787,12 +7787,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8209775890510335994, guid: c4fa87cd4eff4ae4ba4c8d1ad48df5f7,
     type: 3}
   m_PrefabInstance: {fileID: 1531319809}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &757502803 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8030497371230184390, guid: 5376d3755f9987a49b14aaa3ab7aece7,
-    type: 3}
-  m_PrefabInstance: {fileID: 8030497371547021461}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &757502804 stripped
 Transform:
@@ -19699,7 +19693,6 @@ MonoBehaviour:
   - {fileID: 1340699527}
   ambienceSource: {fileID: 2006519608}
   bottleSpawnPoint: {fileID: 1319779797}
-  currentBottle: {fileID: 757502803}
   bottlePrefab: {fileID: 8030497371230184390, guid: 5376d3755f9987a49b14aaa3ab7aece7,
     type: 3}
   targetHitVol: 0
